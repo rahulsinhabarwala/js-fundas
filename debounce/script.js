@@ -27,4 +27,10 @@ const fetchData = (inputValue)=>{
     }
 }
 
+function doIt(a,b){
+    return a+b;
+}
+
+let result = doIt(10,10);
+
 INPUT.addEventListener('keyup',handleFormSubmition);

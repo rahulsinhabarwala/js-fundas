@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+}
+.checkbox{
+    width: 20%;
+}
+.inner-checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+.inner-checkbox::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    top: 100%;
+    bottom: 0;
+    left: calc(50% - 3px);
+    /* subtract half the width which we give to this component */
+    background: blueviolet;
+}
+.content{
+    padding: 20px;
+    width: 80%;
+    
+}
